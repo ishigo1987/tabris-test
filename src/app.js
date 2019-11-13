@@ -1,9 +1,7 @@
 require("./helpers/permissions.js")().then((responsePermission)=>{
   if(responsePermission.Message === "Permission granted"){
+      const workerContacts = new Worker("./src/helpers/worker.js");
 
-      navigator.contactsPhoneNumbers.list((contacts)=>{
-      console.log(contacts.length + ' contacts found');
-       const workerContacts = new Worker("./src/helpers/worker.js");
                workerContacts.onmessage = (event) => {
                	console.log(event)
                   workerContacts.terminate();
@@ -12,7 +10,10 @@ require("./helpers/permissions.js")().then((responsePermission)=>{
                  console.log(`onerror: ${JSON.stringify(error)}`);
                  workerContacts.terminate();
                };
-                workerContacts.postMessage(contacts);
+      navigator.contactsPhoneNumbers.list((contacts)=>{
+      // console.log(contacts.length + ' contacts found');
+       
+                workerContacts.postMessage(JSON.stringify(contacts));
       
    	  },(error)=>{
          console.error(error);
