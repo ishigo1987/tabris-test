@@ -14,7 +14,7 @@
   <plugin name="cordova-plugin-contacts-phonenumbers" spec="0.0.12" />
   <plugin name="cordova-plugin-android-permissions" spec="1.0.2" />
   <!-- <plugin name="tabris-plugin-lottie" spec="https://github.com/eclipsesource/tabris-plugin-lottie.git" /> -->
-  <plugin name="cordova-plugin-x-toast" spec="2.7.2" />
+  <!-- <plugin name="cordova-plugin-x-toast" spec="2.7.2" /> -->
   <!-- <plugin name="cordova-plugin-locationservices" spec="2.1.0" /> -->
   <!-- <plugin name="cordova-plugin-request-location-accuracy" spec="https://github.com/dpa99c/cordova-plugin-request-location-accuracy.git" /> -->
   <!-- <plugin name="cordova-plugin-opensettings" spec="1.3.0" /> -->
