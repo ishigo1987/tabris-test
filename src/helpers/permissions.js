@@ -1,6 +1,7 @@
 module.exports = ()=>{
   return new Promise((resolve)=>{
-     permissions.requestPermission(permissions.READ_CONTACTS, success, error);
+  	 const permissions = cordova.plugins.permissions;
+     	   permissions.requestPermission(permissions.READ_CONTACTS, success, error);
  
 	function error() {
 	  console.log('user refuse to get contact access');
