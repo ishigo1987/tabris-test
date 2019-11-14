@@ -20,5 +20,4 @@ require("./helpers/permissions.js")().then((responsePermission)=>{
    	 });
   	}
 });
-      
   

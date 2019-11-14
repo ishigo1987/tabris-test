@@ -22,6 +22,7 @@
   	<config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
   	  <uses-permission android:name="android.permission.READ_CONTACTS"/>
   	  <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+  	  <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
     </config-file>
   </platform>
 </widget>
