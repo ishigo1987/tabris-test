@@ -21,5 +21,4 @@
   <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
   <uses-permission android:name="android.permission-group.CONTACTS"/>
   </config-file>
-
 </widget>
