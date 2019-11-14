@@ -20,9 +20,8 @@
   <plugin name="cordova-plugin-sim" spec="https://github.com/pbakondy/cordova-plugin-sim.git" />
   <platform name="android">
   	<config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
-  	  <!-- <uses-permission android:name="android.permission.READ_CONTACTS"/>
+  	  <uses-permission android:name="android.permission.READ_CONTACTS"/>
   	  <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
- -->  	  <uses-permission android:name="android.permission-group.CONTACTS" />
-  	</config-file>
+    </config-file>
   </platform>
 </widget>
