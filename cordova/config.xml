@@ -10,7 +10,6 @@
   <preference name="EnableDeveloperConsole" value="$IS_DEBUG" />
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
-  <plugin name="@osvlabs/cordova-plugin-network-information" spec="2.0.6" />
   <plugin name="cordova-plugin-contacts-phonenumbers" spec="0.0.12" />
   <plugin name="cordova-plugin-android-permissions" spec="1.0.2" />
   <plugin name="tabris-plugin-lottie" spec="https://github.com/eclipsesource/tabris-plugin-lottie.git" />
