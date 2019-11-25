@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "base-64": "^0.1.0",
+    "google-libphonenumber": "^3.2.6",
     "tabris": "~3.2.1"
   },
   "devDependencies": {

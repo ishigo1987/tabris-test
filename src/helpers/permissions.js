@@ -16,10 +16,10 @@ module.exports = ()=>{
 	// }
 	const {permission} = require('tabris');
 	if (permission.isAuthorized('contacts')) {
-  console.log('Camera permission is available');
+      resolve({Message:"Permission granted"})
 } else {
     permission.requestAuthorization('contacts').then((responseStatus)=>{
-    	console.log(`Camera permission has been ${responseStatus}.`);
+    	resolve({Message:"Permission granted"})
     })
     
   

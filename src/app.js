@@ -1,23 +1,16 @@
-require("./helpers/permissions.js")().then((responsePermission)=>{
-  if(responsePermission.Message === "Permission granted"){
-      const workerContacts = new Worker("./src/helpers/worker.js");
+function onSuccess(contacts) {
+	console.log('Found ' + contacts.length + ' contacts.');
+};
 
-               workerContacts.onmessage = (event) => {
-               	console.log(event)
-                  workerContacts.terminate();
-               };
-               workerContacts.onerror = (error) => {
-                 console.log(`onerror: ${JSON.stringify(error)}`);
-                 workerContacts.terminate();
-               };
-      navigator.contactsPhoneNumbers.list((contacts)=>{
-      // console.log(contacts.length + ' contacts found');
-       
-                workerContacts.postMessage(JSON.stringify(contacts));
-      
-   	  },(error)=>{
-         console.error(error);
-   	 });
-  	}
-});
-  
+function onError(contactError) {
+	console.log('onError!');
+};
+
+// find all contacts with 'Bob' in any name field
+var options      = new ContactFindOptions();
+options.filter   = "697644414";
+options.multiple = true;
+options.desiredFields = [navigator.contacts.fieldType.id];
+options.hasPhoneNumber = true;
+var fields       = [navigator.contacts.fieldType.displayName, navigator.contacts.fieldType.name];
+navigator.contacts.find(fields, onSuccess, onError, options);
