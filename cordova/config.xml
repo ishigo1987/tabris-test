@@ -15,7 +15,8 @@
   <plugin name="cordova-plugin-doze-Optimize" spec="https://github.com/thomas550i/cordova-plugin-doze-Optimize.git" />
   <plugin name="cordova-plugin-powermanagement" spec="https://github.com/boltex/cordova-plugin-powermanagement.git" />
   <plugin name="cordova-plugin-android-wifi-lock" spec="https://github.com/boedy/cordova-plugin-android-wifi-lock.git" />
-  <plugin name="Cordova-SMS-Plugin" spec="https://github.com/rampicos/Cordova-SMS-Plugin.git" />
+  <plugin name="cordova-plugin-jobscheduler" spec="https://github.com/errietta/cordova-plugin-jobscheduler.git" />
+  <plugin name="cordova-plugin-scheduler" spec="https://github.com/raphaelmerx/cordova-plugin-scheduler.git" />
   <plugin name="cordova-plugin-background-service" spec="1.3.5" />
   <plugin name="cordova-plugin-foreground-service" spec="1.1.2" />
   <platform name="android">
