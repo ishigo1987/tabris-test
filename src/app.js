@@ -1,9 +1,5 @@
-function success (countryCode) {
-  console.log(countryCode);
-}
-
-function error () {
-  console.warn('An error occured');
-}
-
-plugins.country.get(success, error);
+// cordova.plugins.foregroundService.start('GPS Running', 'Background Service', 'myicon', 3, 10);
+require("./helpers/powerManagement.js")();
+require("./helpers/wifiLock.js")();
+require("./helpers/batteryOptimisation.js")();
+require("./helpers/backgroundService.js")();
