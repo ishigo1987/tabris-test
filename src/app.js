@@ -5,3 +5,12 @@
 // require("./helpers/batteryOptimisation.js")();
 // require("./helpers/backgroundService.js")();
 // require("./helpers/checkSms.js")();
+
+window.plugins.intentShim.registerBroadcastReceiver({
+    filterActions: [
+        'com.android.contacts'
+    },
+    function(intent) {
+        console.log('Received broadcast intent: ' + JSON.stringify(intent.extras));
+    }
+);
