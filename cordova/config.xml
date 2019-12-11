@@ -21,7 +21,7 @@
   <!-- <plugin name="cordova-plugin-background-mode" spec="https://github.com/lkonzen-garupa/cordova-plugin-background-mode.git" /> -->
   <plugin name="cordova-plugin-foreground-service" spec="1.1.2" />
   <plugin name="darryncampbell-cordova-plugin-intent" spec="https://github.com/darryncampbell/darryncampbell-cordova-plugin-intent.git" />
-  <plugin name="cordova-plugin-dbcopy"  spec="https://github.com/an-rahulpandey/cordova-plugin-dbcopy" />
+  <plugin name="cordova-plugin-dbcopy" spec="https://github.com/an-rahulpandey/cordova-plugin-dbcopy.git" />
   <platform name="android">
   	<config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
   	  <uses-permission android:name="android.permission.READ_CONTACTS"/>
