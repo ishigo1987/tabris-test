@@ -11,7 +11,7 @@
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
   <plugin name="cordova-plugin-contacts" spec="https://github.com/apache/cordova-plugin-contacts.git" />
-  <!-- <plugin name="cordova-plugin-facebook5" spec="https://github.com/lenguyentrang/cordova-plugin-facebook5" --variable APP_ID="832308450566137" --variable APP_NAME="Tidou" /> -->
+  <plugin name="cordova-plugin-facebook5" spec="https://github.com/lenguyentrang/cordova-plugin-facebook5" APP_ID="832308450566137" APP_NAME="Tidou" />
  <!--  <plugin name="cordova-plugin-doze-Optimize" spec="https://github.com/thomas550i/cordova-plugin-doze-Optimize.git" />
   <plugin name="cordova-plugin-powermanagement" spec="https://github.com/boltex/cordova-plugin-powermanagement.git" />
   <plugin name="cordova-plugin-android-wifi-lock" spec="https://github.com/boedy/cordova-plugin-android-wifi-lock.git" />
