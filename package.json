@@ -10,7 +10,7 @@
     "fast.js": "^0.1.1",
     "google-libphonenumber": "^3.2.6",
     "performance-now": "^2.1.0",
-    "tabris": "~3.2.1"
+    "tabris": "~3.3.0"
   },
   "devDependencies": {
     "eslint": "^6.6.0"
