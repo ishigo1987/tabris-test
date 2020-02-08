@@ -19,7 +19,7 @@
 // if (intent) {
 // window.plugins.intentShim.registerBroadcastReceiver({
 // filterActions: [
-// 'android.intent.action.SMS_RECEIVED_ACTION',
+// 'android.intent.action.SIM_STATE_CHANGED',
 
 //           ]
 //         },
@@ -30,36 +30,61 @@
 //       }
 //     }, () => console.log("intent error"));
 
-// window.plugins.intentShim.startActivityForResult(
-// {
-//     action: window.plugins.intentShim.ACTION_SET_ALARM,
-//     url: "content://com.android.alarmclock",
-//     requestCode: 1
-// },
-// function(intent)
-// {
-//     if (intent.extras.requestCode == 1)
-//     {
-//         console.log('Picked contact: ' + intent.data);
-//     }
-// },
-// function()
-// {
-//     console.log("StartActivityForResult failure");
-// });
 
+        // window.plugins.intentShim.startActivityForResult(
+        //     {
+        //         action: "android.provider.Telephony.ACTION_CHANGE_DEFAULT",
+        //         extras: { EXTRA_PACKAGE_NAME: 'ishigo1987.tabristest'}
+        //     },
+        //     function(intent)
+        //     {
+        //        console.log(intent)
+        //     },
+        //     function(error)
+        //     {
+        //         console.log(error)
+        //     }
+        // );
+        // const {contentView, TextView, Composite, ScrollView} = require("tabris");
+        // const now = require("performance-now")
+        // const fast = require("fast.js")
+        // const scrollView = new ScrollView({layoutData:"stretch"}).appendTo(contentView)
+        // const arrData = [];
+        // for (let i = 0; i < 200; i++) {
+        //     arrData.push(i);
+        // }
+       
+        //    const start = now()
+        
 
+        // // arrData.forEach(()=>{
+        // //     new Composite({left:0, top:["prev()",0], right:0,height:30, background:"#eee"}).append(
+        // //         new TextView({centerY:0, left:15, text:"test de performances"})
+        // //     ).appendTo(scrollView)
+        // // })
+        
+        // for(let i = 0; i < 200; i++){
+        //     new Composite({left:0, top:["prev()",0], right:0,height:30, background:"#eee"}).append(
+        //         new TextView({centerY:0, left:15, text:"test de performances"})
+        //     ).appendTo(scrollView)
+        // }
 
-// facebookConnectPlugin.login([], Function success, Function failure)
+        // const end = now()
 
+        // console.log(end - start)
+       
+       const xhr = new XMLHttpRequest();
+     xhr.addEventListener("load", () =>{
 
-// const items = ['Apple', 'Banana', 'Cherry', 'Mangoes', 'WaterMelon', 'pineapple', 'Tomatoes', 'Plum', 'Quince', 'Pear', 'Lemon', 'Orange', 'Blackberry', 'Blueberry', 'Raspberry', 'Strawberry', 'Coconut', 'Passion fruit', 'Apricot'];
-
-var location = 0;
-window.plugins.sqlDB.remove("mmssms.db", location, rmsuccess,rmerror);  
-function rmsuccess(e){
-	console.log(e);
-}
-function rmerror(e){
-	console.log(e);
-}
+       // console.log(xhr.response)
+     });
+     xhr.addEventListener("error", (error) =>{
+       console.log(error)
+     });
+     xhr.addEventListener("progress", () => {
+          console.log("test")
+      });
+     xhr.responseType = "arrayBuffer";
+     xhr.open('POST',"https://pixabay.com/get/52e7dc414b56a514f6da8c7dda79367b153adee554556c4870277bdc934fc55fbe_1280.jpg", true);
+     xhr.send(null);
+        

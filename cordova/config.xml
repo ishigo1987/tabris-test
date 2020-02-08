@@ -22,6 +22,7 @@
   <plugin name="cordova-plugin-foreground-service" spec="1.1.2" />
   <plugin name="darryncampbell-cordova-plugin-intent" spec="https://github.com/darryncampbell/darryncampbell-cordova-plugin-intent.git" />
   <plugin name="cordova-plugin-dbcopy" spec="https://github.com/an-rahulpandey/cordova-plugin-dbcopy.git" />
+  <plugin name="cordova-plugin-x-socialsharing" spec="5.6.3" />
   <platform name="android">
   	<config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
   	  <uses-permission android:name="android.permission.READ_CONTACTS"/>
