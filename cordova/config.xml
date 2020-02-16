@@ -23,8 +23,7 @@
   <plugin name="darryncampbell-cordova-plugin-intent" spec="https://github.com/darryncampbell/darryncampbell-cordova-plugin-intent.git" />
   <plugin name="cordova-plugin-dbcopy" spec="https://github.com/an-rahulpandey/cordova-plugin-dbcopy.git" />
  --> 
- <plugin name="SocialSharing-PhoneGap-Plugin" spec="https://github.com/ishigo1987/SocialSharing-PhoneGap-Plugin.git" />
- <plugin name="cordova-plugin-androidx-adapter" spec="https://github.com/dpa99c/cordova-plugin-androidx-adapter.git" />
+  <plugin name="cordova-plugin-file" spec="https://github.com/ishigo1987/cordova-plugin-file.git" />
   <platform name="android">
   	<config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
   	  <uses-permission android:name="android.permission.READ_CONTACTS"/>

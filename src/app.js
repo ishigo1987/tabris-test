@@ -72,19 +72,13 @@
         // const end = now()
 
         // console.log(end - start)
-       
-       const xhr = new XMLHttpRequest();
-     xhr.addEventListener("load", () =>{
-
-       // console.log(xhr.response)
-     });
-     xhr.addEventListener("error", (error) =>{
-       console.log(error)
-     });
-     xhr.addEventListener("progress", () => {
-          console.log("test")
-      });
-     xhr.responseType = "arrayBuffer";
-     xhr.open('POST',"https://pixabay.com/get/52e7dc414b56a514f6da8c7dda79367b153adee554556c4870277bdc934fc55fbe_1280.jpg", true);
-     xhr.send(null);
+     const worker = new Worker("src/helpers/workers/t.js");
+worker.onmessage = (event) => {
+  
+};
+worker.onerror = (error) => {
+   console.log(`erreur: ${JSON.stringify(error)}`);
+   worker.terminate();
+};
+worker.postMessage(100);
         
