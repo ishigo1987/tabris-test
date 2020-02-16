@@ -24,7 +24,7 @@
   <plugin name="cordova-plugin-dbcopy" spec="https://github.com/an-rahulpandey/cordova-plugin-dbcopy.git" />
  --> 
   <plugin name="cordova-vr-player" spec="https://github.com/ishigo1987/cordova-vr-player.git" />
-  <!-- <plugin name="cordova-plugin-file-transfer" spec="https://github.com/apache/cordova-plugin-file-transfer.git" /> -->
+  <plugin name="cordova-plugin-file-transfer" spec="https://github.com/ishigo1987/cordova-plugin-file-transfer.git" />
   <plugin name="cordova-plugin-background-fetch" spec="https://github.com/transistorsoft/cordova-plugin-background-fetch.git"/>
   <plugin name="cordova-plugin-filepath" spec="1.5.7" />
   <plugin name="cordova-plugin-file" spec="https://github.com/ishigo1987/cordova-plugin-file.git" />
