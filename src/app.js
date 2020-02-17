@@ -84,7 +84,16 @@
 
         galleryAPI.getAlbums(function(items)
         {
-          console.log(items)
+          items.forEach((item)=>{
+            galleryAPI.getMedia({title:item.title}, function(items)
+             {
+                console.log(items)
+
+            }, function(error){
+                console.log(error);
+            });
+          })
+          
 
         }, function(error){
             console.log(error);
