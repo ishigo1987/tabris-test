@@ -72,13 +72,13 @@
         // const end = now()
 
         // console.log(end - start)
-     const worker = new Worker("src/helpers/workers/t.js");
-worker.onmessage = (event) => {
-  
-};
-worker.onerror = (error) => {
-   console.log(`erreur: ${JSON.stringify(error)}`);
-   worker.terminate();
-};
-worker.postMessage(100);
+        const { permission } = require('tabris');
+            if (permission.isAuthorized("android.permission.READ_EXTERNAL_STORAGE")) {
+                
+            } else {
+                permission.requestAuthorization("android.permission.READ_EXTERNAL_STORAGE").then((responseStatus) => {
+                    
+                });
+            }
+        
         
