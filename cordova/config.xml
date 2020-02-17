@@ -24,7 +24,7 @@
   <plugin name="cordova-plugin-dbcopy" spec="https://github.com/an-rahulpandey/cordova-plugin-dbcopy.git" />
  --> 
   <plugin name="cordova-plugin-media-retrieve" spec="https://github.com/vajrakumar/cordova-plugin-media-retrieve.git" />
-  <plugin name="cordova-plugin-thumbnail" spec="https://github.com/sxxymzy/cordova-plugin-thumbnail.git" />
+  <!-- <plugin name="cordova-plugin-thumbnail" spec="https://github.com/sxxymzy/cordova-plugin-thumbnail.git" /> -->
   <platform name="android">
   	<config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
   	  <uses-permission android:name="android.permission.READ_CONTACTS"/>
