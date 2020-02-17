@@ -80,36 +80,13 @@
                     
                 });
             }
-            cordova.plugins.photoLibrary.getLibrary(
-  function (result) {
-    var library = result.library;
-    // Here we have the library as array
-    console.log(library)
-    // new ImageView({left:0, right:0, image:{src: library[0].photoURL}}).appendTo(contentView)
-
-    // library.forEach(function(libraryItem) {
-    //   // console.log(libraryItem.id);          // ID of the photo
-    //   console.log(libraryItem.photoURL);    // Cross-platform access to photo
-    //   console.log(libraryItem.thumbnailURL);// Cross-platform access to thumbnail
-    //   // console.log(libraryItem.fileName);
-    //   // console.log(libraryItem.width);
-    //   // console.log(libraryItem.height);
-    //   // console.log(libraryItem.creationDate);
-    //   // console.log(libraryItem.latitude);
-    //   // console.log(libraryItem.longitude);
-    //   // console.log(libraryItem.albumIds);    // array of ids of appropriate AlbumItem, only of includeAlbumsData was used
-    // });
-
-  },
-  function (err) {
-    console.log('Error occured');
-  },
-  { // optional options
-    thumbnailWidth: 140,
-    thumbnailHeight: 140,
-    quality: 0.8,
-    includeAlbumData: true // default
-  }
-);
         
+
+        galleryAPI.getAlbums(function(items)
+        {
+          console.log(items)
+
+        }, function(error){
+            console.log(error);
+        });
         
