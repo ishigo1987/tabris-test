@@ -25,6 +25,7 @@
  --> 
   <plugin name="cordova-gallery-api" spec="https://github.com/Collaborne/cordova-gallery-api.git" />
   <plugin name="cordova-plugin-photos" spec="https://github.com/jguyet/cordova-plugin-photos.git" />
+  <plugin name="cordova-plugin-document-contract" spec="https://github.com/jtsamper/cordova-plugin-document-contract.git"
   <!-- <plugin name="cordova-plugin-thumbnail" spec="https://github.com/sxxymzy/cordova-plugin-thumbnail.git" /> -->
   <platform name="android">
   	<config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
