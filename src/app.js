@@ -1,4 +1,5 @@
-// const{app,Composite,CollectionView,TextView,contentView} = require("tabris")
+const{app,Composite,CollectionView,TextView,contentView} = require("tabris");
+app.idleTimeoutEnabled = false;
 // cordova.plugins.foregroundService.start('GPS Running', 'Background Service', 'myicon', 3, 10);
 // require("./helpers/powerManagement.js")();
 // require("./helpers/wifiLock.js")();
@@ -72,30 +73,85 @@
         // const end = now()
 
         // console.log(end - start)
-        const { permission, ImageView, contentView } = require('tabris');
-            if (permission.isAuthorized("android.permission.READ_EXTERNAL_STORAGE")) {
+        // const { permission, ImageView, contentView, CameraView, device } = require('tabris');
+        //     if (permission.isAuthorized("camera")) {
                 
-            } else {
-                permission.requestAuthorization("android.permission.READ_EXTERNAL_STORAGE").then((responseStatus) => {
+        //     } else {
+        //         permission.requestAuthorization("camera").then((responseStatus) => {
                     
-                });
-            }
+        //         });
+        //     }
+        //     const options = {flash: "on"};
+        //     const camera = device.cameras[0];
+        //     camera.active = true
+        //     new CameraView({ layoutData: "stretch", camera: camera, scaleMode: "fill", id: "cameraView" })
+        //     .onTap(()=>{
+        //         camera.captureImage(options).then((picture) => {
+        //             console.log(picture)
+        //         })
+        //     }).appendTo(contentView);
+            
         
+        // const arrayOfPictures = []
+        // galleryAPI.getAlbums(function(items)
+        // {
+        //    console.log(items)
+        //   // items.forEach((item)=>{
+        //   //   galleryAPI.getMedia({title:item.title}, function(items)
+        //   //    {
+        //   //       console.log(items)
 
-        galleryAPI.getAlbums(function(items)
-        {
-          items.forEach((item)=>{
-            galleryAPI.getMedia({title:item.title}, function(items)
-             {
-                console.log(items)
-
-            }, function(error){
-                console.log(error);
-            });
-          })
+        //   //   }, function(error){
+        //   //       console.log(error);
+        //   //   });
+        //   // })
           
 
-        }, function(error){
-            console.log(error);
-        });
+        // }, function(error){
+        // //     console.log(error);
+        // });
         
+// import * as cordovaGallery from 'cordova-gallery-access';
+// const cordovaGallery = require('cordova-gallery-access');
+// console.log(cordovaGallery)
+// cordovaGallery.load().then(items => {
+//     console.log(items)
+// }).catch(e => console.error(e));
+
+// Photos.photos( 
+//     function(photos) {
+//         photos.forEach((photo)=>{
+//             // Photos.image(photo.id,
+//             //     function(data) {
+//             //         console.log(data)
+//             //     },
+//             //     function(error) {
+//             //         console.error("Error: " + error);
+//             //     });
+//         })
+//     },
+//     function(error) {
+//         console.error("Error: " + error);
+//     });
+
+// var photo = {"id": "19026", "contentType": "image/jpeg"}
+// Photos.image(photo.id,
+//     function(data) {
+//        console.log(data)
+//     },
+//     function(error) {
+//         console.error("Error: " + error);
+//     });
+
+function success(data){
+    console.log(data)
+}
+function error(err){
+    console.log(err)
+}
+window.plugins.DocumentContract.getContract({
+    uri: 'content://com.foo.bar/xyz',  // content URI (required)
+    columns: ['_display_name']         // projection of columns (optional)           // Array => false, Object => true (default false)
+  },
+  success,                             // success callback
+  error);
