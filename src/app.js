@@ -192,4 +192,26 @@ app.idleTimeoutEnabled = false;
         // function mediaStatus(status){
         //     console.log(status)
         // }
-        const audio = "https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3";
+        // const audio = "https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3";
+//   var Yanap = cordova.plugins.Yanap;
+//   var mySong = new Yanap.AudioInstance(Yanap.AUDIO_TYPE.MUSIC, function onStatusUpdate(status) {
+//         console.log(status)
+//         if (status === Yanap.AUDIO_INSTANCE_STATUS.ERROR) {
+//             return console.error('error: ' + additionalInfo);
+//         }else if (status === Yanap.AUDIO_INSTANCE_STATUS.LOADED) {
+//           mySong.play();
+//         }
+//         // console.log('new status: ' + status);
+//     }
+// );
+// mySong.load('file://storage/emulated/0/Tidou/1590518764838.mp3');
+// var Yanap = cordova.plugins.Yanap;
+
+// var myBackgroundLoop = new Yanap.AudioInstance(Yanap.AUDIO_TYPE.LOOP);
+// myBackgroundLoop.load('file:///android_asset/audio/t.mp3');
+// myBackgroundLoop.play();
+
+new tabris.WebView({width:500, height:500, url:'src/audio.html'})
+.onLoad(()=>{
+   console.log("loaded")
+}).appendTo(tabris.contentView)
