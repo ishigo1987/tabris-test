@@ -14,6 +14,7 @@
   <plugin name="cordova-plugin-vlc" spec="https://github.com/ishigo1987/cordova-plugin-vlc.git" />
   <!-- <plugin name="cordova-plugin-playstream" spec="https://github.com/baricio/cordova-plugin-playstream" /> -->
   <plugin name="cordova-plugin-sound" spec="https://github.com/mcfarljw/cordova-plugin-sound" />
+  <plugin name="cordova-plugin-mediaac" spec="https://github.com/AlexisCaffa/cordova-plugin-mediaac.git"/>
   <!-- <plugin name="cordova-plugin-contacts" spec="https://github.com/apache/cordova-plugin-contacts.git" /> -->
   <!-- <plugin name="cordova-plugin-facebook5" spec="https://github.com/lenguyentrang/cordova-plugin-facebook5" APP_ID="832308450566137" APP_NAME="Tidou" /> -->
  <!--  <plugin name="cordova-plugin-doze-Optimize" spec="https://github.com/thomas550i/cordova-plugin-doze-Optimize.git" />
