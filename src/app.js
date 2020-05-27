@@ -220,21 +220,35 @@ app.idleTimeoutEnabled = false;
 // console.log(media)
 // media.play()
 // The callback that executes after a Media object has completed the current play, record, or stop
-        function mediaSuccess(success){
-            console.log(`The success is ${success}`)
-        }
+        // function mediaSuccess(success){
+        //     console.log(`The success is ${success}`)
+        // }
 
-        // The callback that executes if an error occurs. It takes an integer error code
-        function mediaError(error){
-            console.log(`The error is ${JSON.stringify(error)}`)
-        }
+        // // The callback that executes if an error occurs. It takes an integer error code
+        // function mediaError(error){
+        //     console.log(`The error is ${JSON.stringify(error)}`)
+        // }
 
-        // The callback that executes to indicate status changes. It takes a integer status code. (Function)
+        // // The callback that executes to indicate status changes. It takes a integer status code. (Function)
         
-        function mediaStatus(status){
-            console.log(status)
-        }
+        // function mediaStatus(status){
+        //     console.log(status)
+        // }
 
-        const media = new Media("file:///storage/emulated/0/Tidou/t.mp3", mediaSuccess, mediaError, mediaStatus);
-        console.log(media)
-        media.play();
+        // const media = new Media("file:///storage/emulated/0/Tidou/t.mp3", mediaSuccess, mediaError, mediaStatus);
+        // console.log(media)
+        // media.play();
+
+var successCallback = function(json) {
+      console.log(json)
+    };
+
+    var errorCallback = function(error) {
+        console.log(error)
+    };
+
+    var params = {
+        url: "https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3"
+    };
+
+    window.ExoPlayer.show(params, successCallback, errorCallback);
