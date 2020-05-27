@@ -177,27 +177,21 @@ app.idleTimeoutEnabled = false;
     // },15000);
 
       // The callback that executes after a Media object has completed the current play, record, or stop
-        function mediaSuccess(success){
-            console.log(`The success is ${success}`)
-        }
+        // function mediaSuccess(success){
+        //     console.log(`The success is ${success}`)
+        // }
 
-        // The callback that executes if an error occurs. It takes an integer error code
-        function mediaError(error, message){
-            console.log(`The error is ${JSON.stringify(error)}`)
-            console.log(message)
-        }
+        // // The callback that executes if an error occurs. It takes an integer error code
+        // function mediaError(error, message){
+        //     console.log(`The error is ${JSON.stringify(error)}`)
+        //     console.log(message)
+        // }
 
-        // The callback that executes to indicate status changes. It takes a integer status code. (Function)
+        // // The callback that executes to indicate status changes. It takes a integer status code. (Function)
         
-        function mediaStatus(status){
-            console.log(status)
-        }
+        // function mediaStatus(status){
+        //     console.log(status)
+        // }
 
-        const media = new Media("https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3", mediaSuccess, mediaError, mediaStatus);
+        const media = new Media("https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3");
         media.play();
-
-        const t = new tabris.Video({
-  width: 160, height: 90,
-  url: 'android_asset/www/media/media.wav',
-  autoPlay:true
-}).appendTo(tabris.contentView)

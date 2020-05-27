@@ -12,6 +12,7 @@
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
   <plugin name="cordova-plugin-media" spec="https://github.com/apache/cordova-plugin-media.git" />
   <plugin name="cordova-plugin-nativeaudio" spec="https://github.com/wizpanda/cordova-plugin-nativeaudio.git" />
+  <plugin name="cordova-plugin-play-audio" spec="https://github.com/distinctdan/cordova-plugin-play-audio" />
   <!-- <plugin name="cordova-plugin-contacts" spec="https://github.com/apache/cordova-plugin-contacts.git" /> -->
   <!-- <plugin name="cordova-plugin-facebook5" spec="https://github.com/lenguyentrang/cordova-plugin-facebook5" APP_ID="832308450566137" APP_NAME="Tidou" /> -->
  <!--  <plugin name="cordova-plugin-doze-Optimize" spec="https://github.com/thomas550i/cordova-plugin-doze-Optimize.git" />
