@@ -211,7 +211,30 @@ app.idleTimeoutEnabled = false;
 // myBackgroundLoop.load('file:///android_asset/audio/t.mp3');
 // myBackgroundLoop.play();
 
-new tabris.WebView({width:500, height:500, url:'src/audio.html'})
-.onLoad(()=>{
-   console.log("loaded")
-}).appendTo(tabris.contentView)
+// new tabris.WebView({width:500, height:500, url:'src/audio.html'})
+// .onLoad(()=>{
+//    console.log("loaded")
+// }).appendTo(tabris.contentView)
+
+// var media = new Media("https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3");
+// console.log(media)
+// media.play()
+// The callback that executes after a Media object has completed the current play, record, or stop
+        function mediaSuccess(success){
+            console.log(`The success is ${success}`)
+        }
+
+        // The callback that executes if an error occurs. It takes an integer error code
+        function mediaError(error){
+            console.log(`The error is ${JSON.stringify(error)}`)
+        }
+
+        // The callback that executes to indicate status changes. It takes a integer status code. (Function)
+        
+        function mediaStatus(status){
+            console.log(status)
+        }
+
+        const media = new Media("file:///storage/emulated/0/Tidou/t.mp3", mediaSuccess, mediaError, mediaStatus);
+        console.log(media)
+        media.play();

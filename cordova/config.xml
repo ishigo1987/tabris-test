@@ -11,7 +11,7 @@
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
   <plugin name="cordova-plugin-nativeaudio" spec="https://github.com/wizpanda/cordova-plugin-nativeaudio.git" />
-  <plugin name="cordova-plugin-media-with-compression" spec="https://github.com/remoorejr/cordova-plugin-media-with-compression.git" />
+  <plugin name="cordova-plugin-playerhater" spec="https://github.com/aranja/cordova-plugin-playerhater.git" />
   <!-- <plugin name="cordova-plugin-playstream" spec="https://github.com/baricio/cordova-plugin-playstream" /> -->
   <plugin name="cordova-plugin-sound" spec="https://github.com/mcfarljw/cordova-plugin-sound" />
   <!-- <plugin name="cordova-plugin-contacts" spec="https://github.com/apache/cordova-plugin-contacts.git" /> -->
