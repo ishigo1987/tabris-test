@@ -192,6 +192,4 @@ app.idleTimeoutEnabled = false;
         // function mediaStatus(status){
         //     console.log(status)
         // }
-
-        const media = new Media("https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3");
-        media.play();
+        const audio = "https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3";
