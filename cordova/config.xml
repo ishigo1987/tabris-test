@@ -10,10 +10,9 @@
   <preference name="EnableDeveloperConsole" value="$IS_DEBUG" />
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
-  <plugin name="cordova-plugin-nativeaudio" spec="https://github.com/wizpanda/cordova-plugin-nativeaudio.git" />
+  <!-- <plugin name="cordova-plugin-nativeaudio" spec="https://github.com/wizpanda/cordova-plugin-nativeaudio.git" /> -->
   <!-- <plugin name="cordova-plugin-vlc" spec="https://github.com/ishigo1987/cordova-plugin-vlc.git" /> -->
-  <!-- <plugin name="cordova-plugin-playstream" spec="https://github.com/baricio/cordova-plugin-playstream" /> -->
-  <plugin name="cordova-plugin-streaming" spec="https://github.com/mradosta/cordova-plugin-streaming" />
+  <plugin name="cordova-plugin-playerhater" spec="https://github.com/aranja/cordova-plugin-playerhater.git" />
   <plugin name="cordova-plugin-sound" spec="https://github.com/mcfarljw/cordova-plugin-sound" />
   <!-- <plugin name="cordova-plugin-mediaac" spec="https://github.com/AlexisCaffa/cordova-plugin-mediaac.git"/> -->
   <!-- <plugin name="cordova-plugin-contacts" spec="https://github.com/apache/cordova-plugin-contacts.git" /> -->
