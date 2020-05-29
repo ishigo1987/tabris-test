@@ -239,16 +239,19 @@ app.idleTimeoutEnabled = false;
         // console.log(media)
         // media.play();
 
-var successCallback = function(json) {
-      console.log(json)
-    };
+// var successCallback = function(json) {
+//       console.log(json)
+//     };
 
-    var errorCallback = function(error) {
-        console.log(error)
-    };
+//     var errorCallback = function(error) {
+//         console.log(error)
+//     };
 
-    var params = {
-        url: "https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3"
-    };
+//     var params = {
+//         url: "https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3"
+//     };
 
-    window.ExoPlayer.show(params, successCallback, errorCallback);
+//     window.ExoPlayer.show(params, successCallback, errorCallback);
+
+// let mediaPlayer = new MediaPlayer({ url: 'https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3' });
+// mediaPlayer.start();
