@@ -15,6 +15,7 @@
   <preference name="AccountManagerType" value="com.tabris.app" />
   <!-- <plugin name="cordova-plugin-nativeaudio" spec="https://github.com/wizpanda/cordova-plugin-nativeaudio.git" /> -->
   <!-- <plugin name="cordova-plugin-vlc" spec="https://github.com/ishigo1987/cordova-plugin-vlc.git" /> -->
+  <plugin name="tabris-plugin-mediaplayer" spec="https://github.com/fax1ty/tabris-plugin-mediaplayer.git" />
   <plugin name="cordova-plugin-kunder-accountmanager" spec="https://github.com/kunder-lab/cordova-plugin-kunder-accountmanager.git">
        <variable name="ACCOUNT_MANAGER_LABEL" value="Tidou" />
        <variable name="ACCOUNT_MANAGER_ICON_URL" value="res/android/xxxhdpi.png" />
