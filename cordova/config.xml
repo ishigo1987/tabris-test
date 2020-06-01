@@ -22,7 +22,7 @@
        <variable name="ACCOUNT_MANAGER_TYPE" value="com.tabris.app" />
   </plugin>
   <plugin name="cordova-plugin-sound" spec="https://github.com/mcfarljw/cordova-plugin-sound" />
-  <plugin name='cordova-plugin-icrop' spec='https://github.com/iamisathya/cordova-plugin-icrop.git' />
+  <plugin name='cordova-plugin-icrop' spec='https://github.com/ishigo1987/cordova-plugin-icrop.git' />
   <plugin name="cordova-plugin-camera" spec="https://github.com/apache/cordova-plugin-camera.git" />
   <!-- <plugin name="cordova-plugin-mediaac" spec="https://github.com/AlexisCaffa/cordova-plugin-mediaac.git"/> -->
   <!-- <plugin name="cordova-plugin-contacts" spec="https://github.com/apache/cordova-plugin-contacts.git" /> -->
