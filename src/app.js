@@ -253,6 +253,6 @@ app.idleTimeoutEnabled = false;
 
 //     window.ExoPlayer.show(params, successCallback, errorCallback);
 
-// let mediaPlayer = new MediaPlayer({ url: 'https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3' });
-// mediaPlayer.play();
- new Button({centerX:0, centerY:0, width:100, height:60, background:"cyan", text:"Take a picture"}).appendTo(contentView);
+let mediaPlayer = new MediaPlayer({ url: 'https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3' });
+mediaPlayer.play();
+ 
