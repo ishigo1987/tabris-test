@@ -255,6 +255,4 @@ app.idleTimeoutEnabled = false;
 
 // let mediaPlayer = new MediaPlayer({ url: 'https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3' });
 // mediaPlayer.play();
-setTimeout(()=>{
- tabris.app.close()
-},5000)
+ new Button({centerX:0, centerY:0, width:100, height:60, background:"cyan", text:"Take a picture"}).appendTo(contentView);
