@@ -254,5 +254,5 @@ app.idleTimeoutEnabled = false;
 //     window.ExoPlayer.show(params, successCallback, errorCallback);
 
 let mediaPlayer = new MediaPlayer({ url: 'https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3' });
-mediaPlayer.play();
+mediaPlayer.start();
  
