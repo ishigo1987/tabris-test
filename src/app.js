@@ -1,5 +1,5 @@
 const{app,Composite,CollectionView,TextView,contentView, TextInput, Button} = require("tabris");
-app.idleTimeoutEnabled = false;
+// app.idleTimeoutEnabled = false;
 // cordova.plugins.foregroundService.start('GPS Running', 'Background Service', 'myicon', 3, 10);
 // require("./helpers/powerManagement.js")();
 // require("./helpers/wifiLock.js")();
@@ -155,114 +155,34 @@ app.idleTimeoutEnabled = false;
 //   },
 //   success,                             // success callback
 //   error);
-// new Button({centerY:0, left:15, right:15, height:75, background:"red", text:"Click me"})
-// .onTap(()=>{
-//     new Composite({top:["prev()",20], left:10, right:10})
-//     .append(
-//         new TextInput({left: ["prev()", 0], centerY: 0, right: 5, style: 'none', floatMessage: false, message:"This is a test"})
-//     ).appendTo(contentView)
-// }).appendTo(contentView);
-    // const{Composite, TextInput, TextView, contentView} = require("tabris")
-    // const headerComposite = new Composite({ top: 0, left: 0, right: 0, height: 57}).appendTo(contentView);
-    // const headerViewTitle = new TextView({ centerY: 0, left: ['prev()', 5], right: 30, textColor: "gray", text: "Test", font: 'bold 17px' }).appendTo(headerComposite);
-    // const searchCountry = new TextView({ centerY: 0, right: 15, textColor:"gray", text:"create input"})
-    // .onTap(({ target }) => {
-    //     target.dispose()
-    //     new TextInput({ width:200, centerY: 0, right: 5, message: "This is a test", style: 'none', floatMessage: false,  background: 'transparent', focused: true}).appendTo(headerComposite);
-    // }).appendTo(headerComposite);
+new Button({centerY:0, left:15, right:15, height:75, background:"red", text:"Click me"})
+.onTap(()=>{
+    new Composite({top:["prev()",20], left:10, right:10})
+    .append(
+        new TextInput({left: ["prev()", 0], centerY: 0, right: 5, style: 'none', floatMessage: false, message:"This is a test"})
+    ).appendTo(contentView)
+}).appendTo(contentView);
+    const{Composite, TextInput, TextView, contentView} = require("tabris")
+    const headerComposite = new Composite({ top: 0, left: 0, right: 0, height: 57}).appendTo(contentView);
+    const headerViewTitle = new TextView({ centerY: 0, left: ['prev()', 5], right: 30, textColor: "gray", text: "Test", font: 'bold 17px' }).appendTo(headerComposite);
+    const searchCountry = new TextView({ centerY: 0, right: 15, textColor:"gray", text:"create input"})
+    .onTap(({ target }) => {
+        target.dispose()
+        new TextInput({ width:200, centerY: 0, right: 5, message: "This is a test", style: 'none', floatMessage: false,  background: 'transparent', focused: true}).appendTo(headerComposite);
+    }).appendTo(headerComposite);
 
 
-    // setTimeout(()=>{
-    //     headerComposite.dispose();
-    // },15000);
+    setTimeout(()=>{
+        headerComposite.dispose();
+    },5000);
 
-      // The callback that executes after a Media object has completed the current play, record, or stop
-        // function mediaSuccess(success){
-        //     console.log(`The success is ${success}`)
-        // }
 
-        // // The callback that executes if an error occurs. It takes an integer error code
-        // function mediaError(error, message){
-        //     console.log(`The error is ${JSON.stringify(error)}`)
-        //     console.log(message)
-        // }
 
-        // // The callback that executes to indicate status changes. It takes a integer status code. (Function)
-        
-        // function mediaStatus(status){
-        //     console.log(status)
-        // }
-        // const audio = "https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3";
-//   var Yanap = cordova.plugins.Yanap;
-//   var mySong = new Yanap.AudioInstance(Yanap.AUDIO_TYPE.MUSIC, function onStatusUpdate(status) {
-//         console.log(status)
-//         if (status === Yanap.AUDIO_INSTANCE_STATUS.ERROR) {
-//             return console.error('error: ' + additionalInfo);
-//         }else if (status === Yanap.AUDIO_INSTANCE_STATUS.LOADED) {
-//           mySong.play();
-//         }
-//         // console.log('new status: ' + status);
-//     }
-// );
-// mySong.load('file://storage/emulated/0/Tidou/1590518764838.mp3');
-// var Yanap = cordova.plugins.Yanap;
 
-// var myBackgroundLoop = new Yanap.AudioInstance(Yanap.AUDIO_TYPE.LOOP);
-// myBackgroundLoop.load('file:///android_asset/audio/t.mp3');
-// myBackgroundLoop.play();
-
-// new tabris.WebView({width:500, height:500, url:'src/audio.html'})
-// .onLoad(()=>{
-//    console.log("loaded")
-// }).appendTo(tabris.contentView)
-
-// var media = new Media("https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3");
-// console.log(media)
-// media.play()
-// The callback that executes after a Media object has completed the current play, record, or stop
-        // function mediaSuccess(success){
-        //     console.log(`The success is ${success}`)
-        // }
-
-        // // The callback that executes if an error occurs. It takes an integer error code
-        // function mediaError(error){
-        //     console.log(`The error is ${JSON.stringify(error)}`)
-        // }
-
-        // // The callback that executes to indicate status changes. It takes a integer status code. (Function)
-        
-        // function mediaStatus(status){
-        //     console.log(status)
-        // }
 
         // const media = new Media("file:///storage/emulated/0/Tidou/t.mp3", mediaSuccess, mediaError, mediaStatus);
         // console.log(media)
         // media.play();
-
-// var successCallback = function(json) {
-//       console.log(json)
-//     };
-
-//     var errorCallback = function(error) {
-//         console.log(error)
-//     };
-
-//     var params = {
-//         url: "https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3"
-//     };
-
-//     window.ExoPlayer.show(params, successCallback, errorCallback);
-
-// let mediaPlayer = new MediaPlayer({ url: 'audio/z.mp3'});
-
-// // mediaPlayer.on({
-// //     ready:(e)=>{
-// //         console.log(e)
-// //     },
-// //     error:(err)=>{
-// //         console.log(err)
-// //     }
-// // })
-// mediaPlayer.play();
+ 
 
  

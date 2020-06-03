@@ -10,18 +10,7 @@
   <preference name="EnableDeveloperConsole" value="$IS_DEBUG" />
   <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
   <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
-  <preference name="AccountManagerLabel" value="Tidou" />
-  <preference name="AccountManagerIconUrl" value="res/android/xxxhdpi.png" />
-  <preference name="AccountManagerType" value="com.tabris.app" />
-  <!-- <plugin name="cordova-plugin-nativeaudio" spec="https://github.com/wizpanda/cordova-plugin-nativeaudio.git" /> -->
-  <!-- <plugin name="cordova-plugin-vlc" spec="https://github.com/ishigo1987/cordova-plugin-vlc.git" /> -->
-  <plugin name="tabris-plugin-mediaplayer" spec="https://github.com/fax1ty/tabris-plugin-mediaplayer.git" />
-  <plugin name="cordova-plugin-kunder-accountmanager" spec="https://github.com/kunder-lab/cordova-plugin-kunder-accountmanager.git">
-       <variable name="ACCOUNT_MANAGER_LABEL" value="Tidou" />
-       <variable name="ACCOUNT_MANAGER_ICON_URL" value="res/android/xxxhdpi.png" />
-       <variable name="ACCOUNT_MANAGER_TYPE" value="com.tabris.app" />
-  </plugin>
-  <plugin name="cordova-plugin-sound" spec="https://github.com/mcfarljw/cordova-plugin-sound" />
+ 
   <!-- <plugin name="cordova-plugin-mediaac" spec="https://github.com/AlexisCaffa/cordova-plugin-mediaac.git"/> -->
   <!-- <plugin name="cordova-plugin-contacts" spec="https://github.com/apache/cordova-plugin-contacts.git" /> -->
   <!-- <plugin name="cordova-plugin-facebook5" spec="https://github.com/lenguyentrang/cordova-plugin-facebook5" APP_ID="832308450566137" APP_NAME="Tidou" /> -->
@@ -41,11 +30,7 @@
   <plugin name="cordova-plugin-document-contract" spec="https://github.com/jtsamper/cordova-plugin-document-contract.git" /> -->
   <!-- <plugin name="cordova-plugin-thumbnail" spec="https://github.com/sxxymzy/cordova-plugin-thumbnail.git" /> -->
   <platform name="android">
-  	<config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
-  	  <uses-permission android:name="android.permission.READ_CONTACTS"/>
-  	  <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
-  	  <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
-      <uses-permission android:name="android.permission.INTERNET" />
+  	<config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">>
     </config-file>
   </platform>
 </widget>
