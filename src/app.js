@@ -253,7 +253,16 @@ app.idleTimeoutEnabled = false;
 
 //     window.ExoPlayer.show(params, successCallback, errorCallback);
 
-let mediaPlayer = new MediaPlayer({ url: 'https://www.s3-us-west-2.amazonaws.com/series-stream/Fruitful+Repentance/CD+1+-++Fruitful+Repentance.mp3'});
-mediaPlayer.play();
-console.log(mediaPlayer)
+// let mediaPlayer = new MediaPlayer({ url: 'audio/z.mp3'});
+
+// // mediaPlayer.on({
+// //     ready:(e)=>{
+// //         console.log(e)
+// //     },
+// //     error:(err)=>{
+// //         console.log(err)
+// //     }
+// // })
+// mediaPlayer.play();
+
  
