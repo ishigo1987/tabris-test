@@ -30,7 +30,7 @@
   <plugin name="cordova-plugin-document-contract" spec="https://github.com/jtsamper/cordova-plugin-document-contract.git" /> -->
   <!-- <plugin name="cordova-plugin-thumbnail" spec="https://github.com/sxxymzy/cordova-plugin-thumbnail.git" /> -->
   <platform name="android">
-  	<config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">>
+  	<config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
     </config-file>
   </platform>
 </widget>
