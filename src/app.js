@@ -1,4 +1,4 @@
-const{app,Composite,CollectionView,TextView,contentView, TextInput, Button} = require("tabris");
+// const{Composite,TextView,contentView, TextInput, Button, statusBar, navigationBar} = require("tabris");
 // app.idleTimeoutEnabled = false;
 // cordova.plugins.foregroundService.start('GPS Running', 'Background Service', 'myicon', 3, 10);
 // require("./helpers/powerManagement.js")();
@@ -155,34 +155,61 @@ const{app,Composite,CollectionView,TextView,contentView, TextInput, Button} = re
 //   },
 //   success,                             // success callback
 //   error);
-new Button({centerY:0, left:15, right:15, height:75, background:"red", text:"Click me"})
-.onTap(()=>{
-    new Composite({top:["prev()",20], left:10, right:10})
-    .append(
-        new TextInput({left: ["prev()", 0], centerY: 0, right: 5, style: 'none', floatMessage: false, message:"This is a test"})
-    ).appendTo(contentView)
-}).appendTo(contentView);
-    const{Composite, TextInput, TextView, contentView} = require("tabris")
-    const headerComposite = new Composite({ top: 0, left: 0, right: 0, height: 57}).appendTo(contentView);
-    const headerViewTitle = new TextView({ centerY: 0, left: ['prev()', 5], right: 30, textColor: "gray", text: "Test", font: 'bold 17px' }).appendTo(headerComposite);
-    const searchCountry = new TextView({ centerY: 0, right: 15, textColor:"gray", text:"create input"})
-    .onTap(({ target }) => {
-        target.dispose()
-        new TextInput({ width:200, centerY: 0, right: 5, message: "This is a test", style: 'none', floatMessage: false,  background: 'transparent', focused: true}).appendTo(headerComposite);
-    }).appendTo(headerComposite);
+
+    // const headerComposite = new Composite({ top: 0, left: 0, right: 0, height: 57}).appendTo(contentView);
+    // const headerViewTitle = new TextView({ centerY: 0, left: ['prev()', 5], right: 30, textColor: "gray", text: "Test", font: 'bold 17px' }).appendTo(headerComposite);
+    // const searchCountry = new TextView({ centerY: 0, right: 15, textColor:"gray", text:"create input"})
+    // .onTap(({ target }) => {
+    //     target.dispose()
+    //     new TextInput({ width:200, centerY: 0, right: 5, message: "This is a test", style: 'none', floatMessage: false,  background: 'transparent', focused: true}).appendTo(headerComposite);
+    // }).appendTo(headerComposite);
 
 
-    setTimeout(()=>{
-        headerComposite.dispose();
-    },5000);
+    // setTimeout(()=>{
+    //     headerComposite.dispose();
+    // },5000);
+
+const {TextInput, CollectionView, contentView, TextView, Composite} = require("tabris");
+
+// const j = 1000;
+// const arr = [];
+// for(let i=0; i<j; i++){
+//   arr.push("this is text " + i);
+// };
+
+// new TextInput({left:0, right:0, height:50, message:"just for the test", keepFocus:true}).appendTo(contentView);
+
+// new CollectionView({top:['prev()',0], left:0, right:0, bottom: 0, scrollbarVisible:true, columnCount:1, itemCount:arr.length, cellHeight:30,
+//    createCell:()=>{
+//       const cell = new Composite({left:0, right:0, height:30,})
+//       new TextView({centerY:0, left:0, right:0, textColor:"#212121",font:"18px", id:'textToDisplay'}).appendTo(cell);
+//       new Composite({ bottom: 0, left: 0, right: 0, height: 1, background: "#eeeeee" }).appendTo(cell);
+      
+//       return cell;
+   
+//    },updateCell:(cell, index)=>{
+//       cell.find("#textToDisplay").only().text = arr[index];
+//    }
+// }).appendTo(contentView)
 
 
 
-
-
-        // const media = new Media("file:///storage/emulated/0/Tidou/t.mp3", mediaSuccess, mediaError, mediaStatus);
-        // console.log(media)
-        // media.play();
- 
-
- 
+const{AlertDialog} = require('tabris');
+    new AlertDialog({
+      title:'Test',
+      message:'Hello how are you ?',
+      buttons: {
+        ok:'Fine',
+        cancel:'Not fine'
+      }
+    }).on({
+      closeOk: (e) => {
+    
+      },
+      closeCancel: () => {
+    
+      },
+      close:()=>{
+    
+      }
+    }).open();
