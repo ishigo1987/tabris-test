@@ -1,10 +1,11 @@
 
-const{contentView, device, permission} = require("tabris");
+const{permission} = require("tabris");
 
-if (permission.isAuthorized('storage')) {
+if (permission.isAuthorized('camera')) {
     console.log("Permission granted");   
 } else {
-    permission.requestAuthorization("storage").then((responseStatus) => {
+    permission.requestAuthorization("camera").then((responseStatus) => {
+        console.log(responseStatus)
         if (responseStatus !== "granted") {
             // Permission denied
         } else {
@@ -12,3 +13,4 @@ if (permission.isAuthorized('storage')) {
         }
     });
 }
+
