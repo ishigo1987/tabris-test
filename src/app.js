@@ -1,20 +1,14 @@
 
-const{CameraView, contentView, device, permission} = require("tabris");
+const{contentView, device, permission} = require("tabris");
 
-if (permission.isAuthorized('camera')) {
-    displayCamera();   
+if (permission.isAuthorized('storage')) {
+    console.log("Permission granted");   
 } else {
-    permission.requestAuthorization("camera").then((responseStatus) => {
+    permission.requestAuthorization("storage").then((responseStatus) => {
         if (responseStatus !== "granted") {
             // Permission denied
         } else {
-            displayCamera();
+            console.log("Permission granted");
         }
     });
-}
-
-function displayCamera(){
-  const camera = device.cameras[0];
-  camera.active = true;
-  new CameraView({layoutData: 'stretch', camera}).appendTo(contentView);
 }
