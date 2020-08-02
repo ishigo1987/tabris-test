@@ -1,26 +1,7 @@
 
-const{permission, CameraView, device, contentView} = require("tabris");
-
-if (permission.isAuthorized('camera')) {
-    camera()  
-} else {
-    permission.requestAuthorization("camera").then((responseStatus) => {
-        console.log(responseStatus)
-        if (responseStatus !== "granted") {
-            // Permission denied
-        } else {
-            camera()
-        }
-    });
-}
-
-function camera(){
-    const camera = device.cameras[0];
-    camera.active = true;
-
-    new CameraView({
-      layoutData: 'stretch',
-      camera
-    }).appendTo(contentView);
-}
-
+tabris.permission.requestAuthorization('storage')
+    .then(status => {
+        if (status != 'granted') console.error('No permissions!');
+        else new MediaPlayer({ url: 'https://www.mymp3tracks.com/uploads/audio/[www.mymp3tracks.com]Locko-Memes-memes-choses.mp3', autoPlay: true, loop: true });
+    })
+    .catch(err => console.error(err));

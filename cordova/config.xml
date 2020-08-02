@@ -13,6 +13,8 @@
   <plugin name="tabris-plugin-mediaplayer" spec="https://github.com/fax1ty/tabris-plugin-mediaplayer.git" />
   <platform name="android">
   	<config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
+      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     </config-file>
   </platform>
 </widget>
