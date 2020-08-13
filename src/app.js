@@ -1,5 +1,5 @@
 
-const{permission, contentView, Button} = require("tabris");
+const{permission, contentView, Button, fs} = require("tabris");
 permission.requestAuthorization('storage')
     .then(status => {
         if (status != 'granted'){
